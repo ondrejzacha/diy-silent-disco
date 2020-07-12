@@ -1,0 +1,18 @@
+<icecast>
+    <listen-socket>
+        <port>8000</port>
+        <bind-address>0.0.0.0</bind-address> <!-- listen on all interfaces -->
+    </listen-socket>
+
+    <mount>
+        <mount-name>/channel1.mp3</mount-name>
+        <username>source</username>
+        <password>D1SC0!</password>
+    </mount>
+
+    <mount>
+        <mount-name>/channel2.mp3</mount-name>
+        <username>source</username>
+        <password>D1SC0!</password>
+    </mount>
+</icecast>
