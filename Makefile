@@ -2,7 +2,7 @@ build:
 	docker build -t rsas .
 
 cwd = $(shell pwd)
-rsas:
+rsas: build
 	docker run -p 8000:8000 -v "$(cwd):/data" rsas -c /data/default-config.xml
 
 serve:
